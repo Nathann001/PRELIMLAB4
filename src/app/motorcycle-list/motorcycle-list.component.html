@@ -1,0 +1,5 @@
+<div *ngFor="let bike of motorcycles">
+    <h2>{{ bike.name }}</h2>
+    <img [src]="'assets/' + bike.image" alt="{{ bike.name }}">
+    <button [routerLink]="['/details', bike.id]">View Details</button>
+  </div>
